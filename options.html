@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>波波小红书下载 · 设置</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main class="settings">
+    <header>
+      <img class="brand-icon" src="icons/icon128.png" alt="波波小红书下载">
+      <div>
+        <h1>波波小红书下载</h1>
+        <p>设置下载位置和文件命名方式</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>下载设置</h2>
+      <label class="field">
+        <span>下载子目录</span>
+        <small>相对于 Chrome 默认下载目录，例如：波波小红书下载</small>
+        <input id="downloadFolder" type="text" maxlength="80" placeholder="波波小红书下载">
+      </label>
+      <label class="field">
+        <span>文件名前缀</span>
+        <small>最终文件名示例：xiaohongshu_01.jpg</small>
+        <input id="filenamePrefix" type="text" maxlength="40" placeholder="xiaohongshu">
+      </label>
+      <label class="field">
+        <span>文件名模板</span>
+        <small>可用变量：{prefix}、{type}、{index}、{title}、{author}、{ext}</small>
+        <input id="filenameTemplate" type="text" maxlength="160" placeholder="{prefix}_{index}">
+      </label>
+      <label class="field">
+        <span>图片保存格式</span>
+        <select id="imageFormat">
+          <option value="original">保持原格式</option>
+          <option value="jpg">JPG</option>
+          <option value="png">PNG</option>
+          <option value="webp">WebP</option>
+        </select>
+      </label>
+      <label class="field">
+        <span>视频质量</span>
+        <select id="videoQuality">
+          <option value="original">优先原始视频</option>
+          <option value="high">高清质量流</option>
+          <option value="normal">普通质量流</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="card">
+      <h2>下载行为</h2>
+      <label class="switch-field"><input id="includeLivePhoto" type="checkbox"><span>下载 Live Photo 动图资源</span></label>
+      <label class="switch-field"><input id="allowDuplicates" type="checkbox"><span>允许重复下载同一资源</span></label>
+      <label class="switch-field"><input id="includeTitle" type="checkbox"><span>文件名包含笔记标题</span></label>
+      <label class="switch-field"><input id="includeAuthor" type="checkbox"><span>文件名包含作者名称</span></label>
+    </section>
+
+    <section class="card info">
+      <h2>当前下载策略</h2>
+      <p>图片优先使用原图 CDN 资源；视频优先使用原始视频，不可用时自动选择最高可用质量流。</p>
+      <p>下载内容只保存到本地，不会上传到开发者服务器。</p>
+    </section>
+
+    <section class="card matrix-card">
+      <div class="matrix-header">
+        <span class="matrix-tag">波波创作矩阵</span>
+      </div>
+      <div class="matrix-body">
+        <img class="matrix-icon" src="icons/huoke-icon128.png" alt="小红书获客助手">
+        <div class="matrix-detail">
+          <div class="matrix-title-row">
+            <h2>小红书获客助手</h2>
+            <span class="badge">自动化运营</span>
+          </div>
+          <p>支持自动养号、评论互动与关键词获客引流，配合素材下载，打造小红书运营闭环。</p>
+        </div>
+        <button id="openStoreBtn" class="primary matrix-btn">获取扩展 ↗</button>
+      </div>
+    </section>
+
+    <footer>
+      <span id="status"></span>
+      <div>
+        <button id="reset">恢复默认</button>
+        <button id="save" class="primary">保存设置</button>
+      </div>
+    </footer>
+  </main>
+  <script src="options.js"></script>
+</body>
+</html>

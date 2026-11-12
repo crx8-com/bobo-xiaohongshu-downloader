@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "BoBo Xiaohongshu Media Downloader - Original Photos & Videos",
+    "description": "Extension display name"
+  },
+  "extDesc": {
+    "message": "One-click download of original watermark-free photos, LivePhotos, and 1080P HD videos from Xiaohongshu notes with smart folder categorization.",
+    "description": "Extension description"
+  }
+}

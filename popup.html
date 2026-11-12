@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>波波小红书下载</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <img src="icons/icon48.png" alt="波波小红书下载">
+      <div>
+      <h1>波波小红书下载</h1>
+      <p id="status">正在扫描当前页面…</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button id="openSettings" class="icon-button" title="设置" aria-label="设置">⚙</button>
+    </div>
+  </header>
+  <div class="toolbar">
+    <label><input id="selectAll" type="checkbox"> 全选</label>
+    <span id="count">0 个资源</span>
+    <button id="refresh" class="quiet-button">刷新资源</button>
+    <button id="downloadSelected" class="primary">下载选中</button>
+  </div>
+  <main id="grid"></main>
+  <footer id="openRecommend" class="recommend-bar" role="button" tabindex="0" title="了解波波小红书获客助手">
+    <img src="icons/huoke-icon128.png" alt="小红书获客助手">
+    <span class="recommend-title">小红书获客助手</span>
+    <span class="recommend-divider">·</span>
+    <span class="recommend-desc">自动养号、评论互动与获客</span>
+    <span class="recommend-badge">获取 ↗</span>
+  </footer>
+  <script src="popup.js"></script>
+</body>
+</html>

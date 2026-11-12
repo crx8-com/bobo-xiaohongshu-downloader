@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "波波小红书助手-无水印原图/高清视频/LivePhoto实况/批量下载归档",
+    "description": "扩展显示名称"
+  },
+  "extDesc": {
+    "message": "一键提取小红书无水印原图、LivePhoto实况动图与1080P高清视频，支持按作者与笔记标题智能建文件夹分类归档，带文案标签一键批量打包下载！",
+    "description": "扩展描述"
+  }
+}
